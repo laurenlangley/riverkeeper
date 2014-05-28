@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width">
+<title>Chattahoochee Riverkeeper - Neighborhood Water Watch Monitoring Data</title>
+
+<!-- Stylesheets -->
+<link media="all" type="text/css" rel="stylesheet" href="styles/style.css">
+<link href="http://www.google.com/uds/api/visualization/1.1/3492a02d9b7a1d389188109cd4fd7eb3/controls.css" type="text/css" rel="stylesheet">
+<!-- Scripts -->
+<script type="text/javascript" src="http://www.google.com/jsapi"></script>
+<!-- hosted version of jquery -->
+<!--<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>-->
+<!-- local copy of jquery -->
+<script src="scripts/jquery-1.8.2.min.js"></script>
+<script src="http://www.google.com/uds/?file=visualization&amp;v=1.1&amp;packages=controls%2Ccorechart" type="text/javascript"></script>
+<script src="http://www.google.com/uds/api/visualization/1.1/3492a02d9b7a1d389188109cd4fd7eb3/format+en,default,controls,corechart.I.js" type="text/javascript"></script>
+
+<!-- Style for Internet Explorer -->
+<!--[if gte IE 9]
+  <style type="text/css">
+    .gradient {
+       filter: none;
+    }
+  </style>
+<![endif]-->
+
+<script>
+    $(document).ready(function() {
+        $('.progress-indicator').show();
+        $(window).load(function() { $('.progress-indicator').hide(); });
+    });
+</script>
+
+</head>
+
+<body>
+
+<div class="progress-indicator">
+   <img src="images/icon_loading_75x75.gif" alt="" />
+   <h1>Loading.....</h1>
+</div>
+
+<div id="page" class="center">
+	<div id="heading" class="clearfix">
+    	
+    	<div id="logo">
+        	<a title="CRK" href="http://chattahoochee.org" target="_blank"><img alt="Chattahoochee Riverkeeper" src="images/crk-logo-small.png"></a>
+		</div>
+		
+		<div id="titletext">
+    		<span class="title">NEIGHBORHOOD WATER WATCH </span>
+            <span class="subtitle"> MONITORING DATA</span>
+        </div>
+    
+    </div>
+    
+    <div class="topbar"></div>
+    	
+    <div id="left-column">
+
+        <div class="subheading">MAP VIEW OF WATER COLLECTION SITES</div>
+        
+        <div id="mapDesc">
+        	<p>Select a site marker from the map below to display data from that collection site.</p>
+        </div>
+        
+        <div class="mapContainer">
+        	<div id="map">
+        	</div>
+        </div>
+            
+        <div class="subheading">LIST VIEW OF WATER COLLECTION SITES</div>
+
+        <div id="maplistDesc">
+        	<p>Select a site name from the list below to display data. Scroll to view complete list.</p>
+        </div>
+    		
+    	<div id="maplist">
+    		<form id="form" name="myform" method="POST">
+    		
+        		<div class="list">
+        			<!-- dynamically adding collection site list here -->
+        		</div>
+            
+            </form>
+        </div>
+    </div>
+	
+	<div id="right-column">
+    	<div class="subheading">DATA VIEW OF SELECTED COLLECTION SITE</div>
+
+    	<div id="whichSite" class="details">
+    		<p></p>
+        </div>
+        
+        <div id="table" class="details">
+        	<p>Last E. coli Result: <span id="last-collected"></span> MPN/100mL on <span id="last-date"></span></p>
+        </div>
+
+        <div id="dataLink">
+            <!-- dynamically adding link to site public spreadsheet -->
+        </div>
+        
+        <div id="dataDesc" style="line-height: 16px;">
+        	<p>Interact with the timeline (trend data) by clicking on the left and/or right handle <img src="images/handle.png" height="19px" width="19px">icons and dragging them towards the center of the timeline to filter all data by date range. Click in the middle of the range filter and drag along timeline to compare data for that date range. To interact with the column charts below for each parameter (E. coli, Turbidity, Rainfall, and Specific Conductivity) hover and click a column with your mouse to display data for the corresponding date.</p>
+        </div>
+        
+        <div id="timeline"></div>
+        
+        <div id="ecoli"></div>
+        
+        <div id="ecoliDesc" style="line-height: 16px;">
+        	<p><span style="color: #b4221f;">*</span> The current EPA water quality standard for a single freshwater sample is 126 MPN/100mL. E. coli levels above that standard may indicate contamination. For more information about water monitoring, visit <a href="http://www.chattahoochee.org/" target="_blank">Chattahoochee Riverkeeper</a>.</p>
+        </div>
+        
+        <div id="turbidity"></div>
+        
+        <div id="rain"></div>
+        
+        <div id="conductivity"></div>
+
+        <footer>
+            <p>The Neighborhood Water Watch Monitoring Data page was designed and developed for Chattahoochee Riverkeeper by <a href="http://www.laurenlangley.com/" target="_blank">Lauren Langley</a>.</p>
+        </footer>
+
+	</div>
+
+</div>
+
+<!-- Scripts DO NOT DELETE -->
+<script type="text/javascript" src="scripts/master.js"></script>
+
+</body>
+</html>

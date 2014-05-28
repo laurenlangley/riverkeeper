@@ -1,0 +1,324 @@
+/**** This project was created by Lauren Langley for Chattahoochee Riverkeeper as her thesis project at Georgia Institute of Technology ****/
+
+html {
+	height: 100%;
+}
+
+body {
+	background-color: #E4E3DB;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: .8em;
+	color: #6b6860;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	color: #08335e;
+}
+
+h1 {
+	font-size: 1em;
+	color: #08335e;
+}
+
+h2 {
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: .85em;
+	color:#928f84;
+}
+
+footer {
+	position:absolute;
+	margin-top:300px;
+	margin-left:0px;
+	color:#08335e;
+}
+
+footer a{
+	color:#5f8b9e;
+}
+
+#conductivity {
+	position: absolute;
+	float: right;
+	height: 300px;
+	width: 475px;
+	margin-top: -10px;
+	margin-left: 418px;
+}
+
+#content {
+	margin-top: 100px;
+	margin-left: 15px;
+	margin-right: auto;
+	position: absolute;
+	width: 75%;
+}
+
+#dataLink{
+	position:absolute;
+	right:0px;
+	top:56px;
+	text-align:right;
+}
+
+#dataLink img{
+	width: 28px;
+	margin-left: 6px;
+}
+
+#dataLink span{
+	vertical-align: bottom;
+	position: relative;
+	bottom: 8px;
+}
+
+#ecoli {
+	height: 400px;
+	margin-top: 0px;
+	margin-left: 0px;
+}
+
+#heading {
+	height: 60px;
+	width: 100%;
+	padding: 0px;
+    position: fixed;
+	text-align:center;
+    top: 0;
+    z-index: 55;
+}
+
+#left-column {
+	position: absolute;
+	width: 500px;
+	min-width: 500px;
+	padding: 15px;	
+	margin-top: 25px;	
+}
+
+#logo {
+	float: left;
+	margin-top: 2px;
+	margin-left: 85px;
+	vertical-align: middle;
+	position: fixed;
+	border: 0;
+}
+
+#map {
+	height:350px;
+	width:480px;
+	margin-bottom: 20px;
+	padding-top: 5px;
+}
+
+#maplist {
+	margin-top: 15px;
+	margin-left: 8px;
+	min-width: 500px;
+}
+
+#mapDesc {
+	padding-left:10px;	
+}
+
+#maplistDesc {
+	padding-left:10px;
+}
+
+#page {
+	margin-top: 50px;
+}
+
+#rain {
+	position: absolute;
+	float: right;
+	height: 300px;
+	width: 475px;
+	margin-top: -10px;
+	margin-left: -48px;
+}
+
+#right-column {
+	position: absolute;
+	margin-top: 40px;
+	margin-left: 560px;
+	width: 840px;
+	padding: 0px;
+}
+
+#table{
+	color: #b4221f;
+}
+
+#timeline {
+	height: 100px;
+	width: 806px;
+	margin-top: 15px;
+	margin-left: 20px;
+}
+
+#title {
+	position: absolute;
+	margin-top: 33px;
+	margin-left: 390px;
+}
+
+#titletext {
+    float: left;
+    width: 900px;
+    height: 60px;
+    margin: 0 0 0 320px;
+    padding: 11px;
+    position: relative;
+   	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 32px;
+	color: #5f8b9e;
+	text-align: center;
+    z-index: 56;
+
+}
+
+#turbidity{
+	height: 400px;
+	margin-top: -14px;
+	margin-left: 0px;
+}
+
+.center {
+	margin:auto;
+	width:1500px;
+}
+
+.clearfix {
+    display: block;
+}
+
+.clearfix:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+
+.details {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.3em;
+	font-weight: 500;
+	color: #08335e;
+	letter-spacing: .03em;
+	margin-bottom: -12px;
+}
+
+.highlight {
+	color: #FFF;
+}
+
+.mapContainer {
+	padding: 0 8px;
+}
+
+.subheading {
+	width: 100%;
+	border-bottom: 1px solid #999;
+	padding: 3px;
+	font-family: Georgia, "Times New Roman", Times, serif;
+	font-size: 1.15em;
+	color: #6b6860;
+}
+
+.subtitle{
+	color: #FFF;
+	font-weight: lighter;
+}
+
+.topbar {
+	background-color: #08335e;
+    display: block;
+    height: 60px;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 54;
+}
+
+/********* RADIO BUTTON STYLES *********/
+
+form {
+	width: 440px;
+	height: 870px;
+	padding: 18px 18px 18px 22px;
+	margin-bottom: 18px;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	text-overflow: ellipsis;
+	color: #E4E3DB;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 1.1em;
+	font-weight:200;
+	letter-spacing:.075em;
+	background: #5f8b9e;
+	/* IE9 SVG, needs conditional ovserride of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzVmOGI5ZSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM0NTcwOGEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-linear-gradient(top, #5f8b9e 0%, #45708a 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#5f8b9e), color-stop(100%,#45708a)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #5f8b9e 0%,#45708a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #5f8b9e 0%,#45708a 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #5f8b9e 0%,#45708a 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #5f8b9e 0%,#45708a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5f8b9e', endColorstr='#45708a',GradientType=0 ); /* IE6-8 */
+	border-radius: 10px; -webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-khtml-border-radius: 10px;
+	box-shadow: 0 5px 12px rgba(0,0,0,.4);
+	-webkit-box-shadow: 0 5px 12px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 5px 12px rgba(0,0,0,.4);
+	-khtml-box-shadow: 0 5px 12px rgba(0,0,0,.4);
+}
+
+label {
+	display: block;
+	cursor: pointer; 		
+	line-height: 1.15em;
+	padding-left: 24px;
+	background: url(../images/radio-off-small.png) left center no-repeat;
+}
+
+label.on {
+	background: url(../images/radio-on-small.png) left center no-repeat;
+	color: #FFF;
+}
+
+/********* PRELOADER STYLES *********/
+/**** Courtesy of http://webdevelopmenttechniques.blogspot.com ****/
+
+ .progress-indicator {
+   top:0;
+   right:0;
+   width:100%;
+   height:100%;
+   position:fixed;
+   text-align:center;
+   /* IE filter */
+   filter: progid:DXImageTransform.Microsoft.Alpha(opacity=50);
+   -moz-opacity:1.0;    /* Mozilla extension */
+   -khtml-opacity:1.0;  /* Safari/Conqueror extension */
+   opacity:1.0; /* CSS3 */
+   z-index:1000;
+   background-color:white;
+   display:none;
+ }
+
+ .progress-indicator img {
+   margin-top:150px;
+ }
+ .progress-indicator h1 {
+   font-size:16px;
+   font-weight:bold;
+   margin-top:50px;
+ }

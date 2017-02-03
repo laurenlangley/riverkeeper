@@ -9,3 +9,5 @@ The project is a publicly accessible web-based interactive data visualization to
 Chattahoochee Riverkeeper recognized the benefits the NWW program could reap with this tool and wanted to continue our relationship for me to fully implement it into their workflow. The U.S. Environmental Protection Agency (EPA) awarded Chattahoochee Riverkeeper (CRK) a $50,000 Urban Waters grant to support (in part) the production of this tool. The tool was officially rolled out in June 2013 and can be seen [here](http://www.chattahoochee.org/nww/)
 
 Another goal of this project was to contribute my work to the open source community so that other nonprofit environmental agencies may customize this tool to suit their needs. And so, here we are...enjoy the code and please keep in touch about how you are utilizing it in your projects!
+
+[Thesis Documentation](https://github.com/laurenlangley/riverkeeper/blob/master/Langley_Thesis_Documentation.pdf)
